@@ -161,7 +161,7 @@ public class Main {
         in.nextLine();
         if(!cBook.hasContactNumber(phoneNumber)){
             System.out.println("Phone number does not exist.");
-        }else {
+        }else{
             System.out.println(cBook.getPhoneContact(phoneNumber));
         }
     }
