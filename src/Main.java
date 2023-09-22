@@ -58,6 +58,9 @@ public class Main {
                 case GET_NAME:
                     getName(in, cBook);
                     break;
+                case EXIST_PHONE:
+                    existPhone(cBook);
+                    break;
                 default:
                     System.out.println(COMMAND_ERROR);
             }
@@ -166,5 +169,11 @@ public class Main {
         }
     }
 
-
+    private static void existPhone(ContactBook cBook) {
+        if(cBook.existPhones()){
+            System.out.println("There are contacts that share phone numbers.");
+        } else{
+            System.out.println("All contacts have different phone numbers.");
+        }
+    }
 }
